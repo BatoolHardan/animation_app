@@ -18,8 +18,8 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
 
-    controller = AnimationController(
-        duration: Duration(milliseconds: 1000), vsync: this);
+    controller =
+        AnimationController(duration: Duration(milliseconds: 200), vsync: this);
 
     curve = CurvedAnimation(parent: controller, curve: Curves.slowMiddle);
 
